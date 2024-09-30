@@ -11,7 +11,7 @@ body{
     width: 100vw;
     height: 100vh;
     /* background-color: #002339; */
-    background: linear-gradient(to left, #002339, #004976, #017760);
+    background: linear-gradient(to left, #002339, #004976, #005342);
     color: white;
     display: flex;
     justify-content: center;
@@ -28,6 +28,7 @@ body{
     border-radius: 10px;
     padding: 2rem 3rem;
     box-shadow: 4px 4px 4px black;
+    background: linear-gradient(45deg, #002339, #004976, #004c3d);
 
     h1{
         text-align: center;
@@ -46,6 +47,7 @@ body{
     width: 300px;
     font-size: 1.2rem;
     margin-block: 10px;
+    text-overflow: ellipsis;
 }
 
 .inputBox{

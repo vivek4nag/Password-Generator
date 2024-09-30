@@ -94,7 +94,7 @@ function copypassword(){
 
         setTimeout(() => {
             copyIcon.title = "";
-        }, 2000);
+        }, 3500);
     }
 }
 
