@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./assets/password-setting.png" type="image/x-icon">
     <title>Generate Password</title>
 </head>
 <body>
@@ -13,9 +14,10 @@
 
         <div class="display">
             <input type="text" id="password" placeholder="Password">
-            <img src="assets/copy.png" alt="">
+            <img src="assets/copy.png" alt="copy kar" onclick="copypassword()">
         </div>
-        <button><img src="assets/generate.png" alt="">Generate Password</button>
+        
+        <button onclick="createPassword ()"><img src="assets/generate.png" alt="">Generate Password</button>
     </div>
 
 
