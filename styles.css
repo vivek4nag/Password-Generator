@@ -8,80 +8,76 @@
 }
 
 body{
-    background-color: #002339;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #002339; */
+    background: linear-gradient(to left, #002339, #004976, #017760);
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .container{
-    margin: 12% auto;
-    width: 90%;
-    max-width: 700px;
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
+    /* align-items: center; */
+    border: 0.5px solid #000000;
+    border-radius: 10px;
+    padding: 2rem 3rem;
+    box-shadow: 4px 4px 4px black;
 
     h1{
-        font-weight: 500;
-        font-size: 2.5rem;
-
-        span{
-            font-size: 2.8rem;
-            color: #019f55;
-            border-bottom: 4px solid #019f55;
-            /* padding-bottom: 7px; */
-        }
+        text-align: center;
+        font-size: 1.4rem;
+        margin-block: 6px;
+        user-select: none;
     }
 }
 
-.display{
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    background: #fff;
-    color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem 1rem;
+.passBox{
+    background-color: #fff;
+    border: none;
+    outline: none;
+    padding: 0.8rem;
     border-radius: 10px;
-
-    img{
-        width: 25px;
-        cursor: pointer;
-    }
-
-    input{
-        border: 0;
-        outline: 0;
-        font-size: 1.5rem;
-        width: 100%;
-    }
+    width: 300px;
+    font-size: 1.2rem;
+    margin-block: 10px;
 }
 
-.container button img{
-    width: 25px;
-    margin-right: 10px;
-}
-
-.container button{
-    border: 0;
-    outline: 0;
-    background: #019f55 ;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 300;
+.row{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px 26px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 40%;
+    margin-block: 8px;
+
+    p, label{
+       flex-basis: 100%; 
+       font-size: 0.9rem;
+       font-weight: 300;
+    }
 }
 
-@media screen and (max-width: 370px) {
-    .display{
-        display: flex;
-        flex-direction: column;
-    }
+.row input[type ="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+
+.genBtn{
+    border: none;
+    outline: none;
+    background: #045746;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-block: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.genBtn:hover{
+    background-color: #177461;
 }
